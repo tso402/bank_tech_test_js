@@ -1,0 +1,27 @@
+{
+  "name": "bank_tech_test_js",
+  "version": "1.0.0",
+  "description": "Bank Tech Test in js",
+  "main": "src/Bank.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "istanbul cover --include-all-sources jasmine-node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tso402/bank_tech_test_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tso402/bank_tech_test_js/issues"
+  },
+  "homepage": "https://github.com/tso402/bank_tech_test_js#readme",
+  "dependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.4.0",
+    "jasmine-node": "^1.16.2"
+  }
+}
