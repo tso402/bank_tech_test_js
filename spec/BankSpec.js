@@ -45,7 +45,7 @@ it('should be able to display a statement in the console', function(){
   var depositAmount = 1000
   var depositDate = '10/01/2012'
   expectedOutput = 'date || credit || debit || balance'
-  expectedOutput2 = '10/01/2012 || 1000 || null || 1000'
+  expectedOutput2 = '10/01/2012 || 1000.00 ||  || 1000.00'
   bank.deposit(depositAmount,depositDate);
   bank.printStatement();
   expect(console.log).toHaveBeenCalledWith(expectedOutput);
@@ -63,9 +63,9 @@ it('should pass a feature test of the requirements',function(){
   bank.deposit(depositAmount2,depositDate2);
   bank.withdraw(withdrawlAmount,withdrawlDate);
   expectedOutput = 'date || credit || debit || balance'
-  expectedOutput2 = '14/01/2012 || null || 500 || 2500'
-  expectedOutput3 = '13/01/2012 || 2000 || null || 3000'
-  expectedOutput4 = '10/01/2012 || 1000 || null || 1000'
+  expectedOutput2 = '14/01/2012 ||  || 500.00 || 2500.00'
+  expectedOutput3 = '13/01/2012 || 2000.00 ||  || 3000.00'
+  expectedOutput4 = '10/01/2012 || 1000.00 ||  || 1000.00'
   bank.printStatement();
   expect(console.log).toHaveBeenCalledWith(expectedOutput);
   expect(console.log).toHaveBeenCalledWith(expectedOutput2);
