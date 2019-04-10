@@ -20,8 +20,9 @@
   },
   "homepage": "https://github.com/tso402/bank_tech_test_js#readme",
   "dependencies": {
+    "growl": ">=1.10.0",
     "istanbul": "^0.4.5",
     "jasmine": "^3.4.0",
-    "jasmine-node": "^1.16.2"
+    "jasmine-node": "^2.0.1"
   }
 }
